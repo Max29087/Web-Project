@@ -93,6 +93,7 @@ a {
     justify-content: center;
     align-items: center;
     height: 470px;
+    object-fit: cover;
 }
 
 .slider {
@@ -100,6 +101,7 @@ a {
     height: 470px;
     overflow: hidden;
     position: relative;
+    object-fit: cover;
 }
 
 .slider img {
