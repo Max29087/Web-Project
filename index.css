@@ -155,6 +155,13 @@ a {
     }
 }
 
+@media (max-width: 1400px) {
+    .feature-box {
+        flex: 1 1 280px;
+        max-width: 280px;
+    }
+}
+
 #feature-box-icon {
     padding: 25px;
     font-size: 30px;
