@@ -157,8 +157,8 @@ a {
 
 @media (max-width: 1400px) {
     .feature-box {
-        flex: 1 1 280px;
-        max-width: 280px;
+        flex: 1 1 230px;
+        max-width: 230px;
     }
 }
 
