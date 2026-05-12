@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', 'Roboto', 'Open Sans', 'Inter', 'Montserrat', sans-serif;
 }
 
 body {
@@ -84,7 +84,7 @@ a {
 
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 
@@ -157,12 +157,12 @@ a {
 
 
 .card h3 {
-    font-size: 16px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
 .card p {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.6;
     color: #555;
 }
@@ -173,6 +173,10 @@ a {
 
 .campaigns h2 {
     margin-bottom: 20px;
+}
+
+#notice-11 {
+    font-size: 35px;
 }
 
 .notice {
@@ -193,11 +197,11 @@ a {
 }
 
 .notice h4 {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .notice p {
-    font-size: 13px;
+    font-size: 16px;
     color: #555;
     line-height: 1.5;
 
@@ -206,7 +210,7 @@ a {
 
 .notice small {
     color: #777;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 
@@ -216,8 +220,7 @@ a {
 .tag {
     padding: 3px 8px;
     border-radius: 20px;
-    font-size: 11px;
-    font-weight: bold;
+    font-size: 16px;
 }
 
 .event {
@@ -245,6 +248,7 @@ a {
 
 .impact h2 {
     margin-bottom: 15px;
+    font-size: 25px;
 }
 
 .impact-box {
@@ -266,11 +270,11 @@ a {
 
 .impact-item h3 {
     color: #0ba34a;
-    font-size: 34px;
+    font-size: 30px;
     margin-bottom: 8px;
 }
 
 .impact-item p {
     color: #666;
-    font-size: 14px;
+    font-size: 16px;
 }
