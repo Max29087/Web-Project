@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collector Dashboard</title>
+
+    <link rel="stylesheet" href="collector.css">
+</head>
+
+<body>
+
+
+    <header class="nav-bar">
+
+        <div class="logo-section">
+
+            <img src="logo.png" class="logo">
+
+            <h2>Collector Dashboard</h2>
+
+        </div>
+
+
+
+        <div class="right-nav">
+
+            <p>David Brown - ABC-1234</p>
+
+            <button class="logout-btn" id="btn-logut">
+
+                <img src="logout.png" class="icon">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <div class="container">
+
+
+        <div class="sidebar">
+
+            <div class="menu active" id="pickupMenu">
+
+                <img src="menu.png" class="icon">
+
+                Pickup Assignments
+
+            </div>
+
+
+
+            <div class="menu" id="completedMenu">
+
+                <img src="check.png" class="icon">
+
+                Completed
+
+            </div>
+
+        </div>
+
+
+
+        <div class="content">
+
+
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="card-top">
+
+                        <p>Total Assignments</p>
+
+                        <img src="truck.png" class="icon">
+
+                    </div>
+
+                    <h1>2</h1>
+
+                </div>
+
+
+
+
+
+                <div class="card">
+
+                    <div class="card-top">
+
+                        <p>Pending</p>
+
+                        <img src="pending.png" class="icon">
+
+                    </div>
+
+                    <h1 id="pendingCount">1</h1>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <div class="card-top">
+
+                        <p>In Progress</p>
+
+                        <img src="progress.png" class="icon">
+
+                    </div>
+
+                    <h1 id="progressCount">1</h1>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <div class="card-top">
+
+                        <p>Completed</p>
+
+                        <img src="checked.png" class="icon">
+
+                    </div>
+
+                    <h1>0</h1>
+
+                </div>
+
+            </div>
+
+
+
+            <div id="pickupPage">
+
+                <div class="main-box">
+
+                    <h3>Active Pickup Assignments</h3>
+
+                    <p class="gray">
+                        View and manage your assigned pickup requests
+                    </p>
+
+
+
+
+                    <div class="pickup-card">
+
+                        <div class="status" id="statusText">
+                            assigned
+                        </div>
+
+
+                        <div class="pickup-flex">
+
+
+
+                            <div>
+
+                                <h4>Request #pr1</h4>
+
+                                <p class="name">John Doe</p>
+
+
+                                <p class="details">
+
+                                    <img src="call.png" class="small-icon">
+
+                                    +1234567890
+
+                                </p>
+
+
+                                <p class="details">
+
+                                    <img src="location.png" class="small-icon">
+
+                                    123 Main Street, Apt 4B
+
+                                </p>
+
+
+
+
+
+                                <div class="space">
+
+                                    <p class="label">Category</p>
+
+                                    <p>Laptop</p>
+
+                                </div>
+
+
+
+
+                                <div class="space">
+
+                                    <p class="label">Scheduled Date</p>
+
+                                    <p>3/25/2025</p>
+
+                                </div>
+
+
+
+
+                                <div class="space">
+
+                                    <p class="label">Description</p>
+
+                                    <p>Old laptops, non-working</p>
+
+                                </div>
+
+
+
+
+
+
+                                <div class="button-row">
+
+                                    <button class="dark-btn" id="pickupBtn">
+                                        Start Pickup
+                                    </button>
+
+
+
+                                    <button class="light-btn">
+
+                                        <img src="placeholder.png" class="small-icon">
+
+                                        View on Map
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+
+
+                            <div class="right-side">
+
+                                <div>
+
+                                    <p class="label">Quantity</p>
+
+                                    <p>2 Items</p>
+
+                                </div>
+
+
+
+                                <div class="space">
+
+                                    <p class="label">OTP</p>
+
+                                    <p><b>123456</b></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="pickup-card">
+
+                        <div class="status">
+                            in progress
+                        </div>
+
+
+                        <div class="pickup-flex">
+
+
+
+                            <div>
+
+                                <h4>Request #pr4</h4>
+
+                                <p class="name">Sarah Johnson</p>
+
+
+                                <p class="details">
+
+                                    <img src="call.png" class="small-icon">
+
+                                    +1234567891
+
+                                </p>
+
+
+                                <p class="details">
+
+                                    <img src="location.png" class="small-icon">
+
+                                    456 Oak Avenue
+
+                                </p>
+
+
+
+
+
+                                <div class="space">
+
+                                    <p class="label">Category</p>
+
+                                    <p>Appliance</p>
+
+                                </div>
+
+
+
+
+                                <div class="space">
+
+                                    <p class="label">Scheduled Date</p>
+
+                                    <p>3/23/2025</p>
+
+                                </div>
+
+
+
+
+                                <div class="space">
+
+                                    <p class="label">Description</p>
+
+                                    <p>Old microwave</p>
+
+                                </div>
+
+
+
+
+
+
+                                <div class="button-row">
+
+                                    <button class="dark-btn" id="verifyBtn">
+                                        Verify & Complete
+                                    </button>
+
+
+
+                                    <button class="light-btn">
+
+                                        <img src="placeholder.png" class="small-icon">
+
+                                        View on Map
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="right-side">
+
+                                <div>
+
+                                    <p class="label">Quantity</p>
+
+                                    <p>1 Item</p>
+
+                                </div>
+
+
+
+                                <div class="space">
+
+                                    <p class="label">OTP</p>
+
+                                    <p><b>456789</b></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div id="completedPage" class="hidden">
+
+                <div class="main-box">
+
+                    <h2>Completed Pickups</h2>
+
+                    <p class="gray">
+                        History of your completed pickups
+                    </p>
+
+
+
+                    <table>
+
+                        <tr>
+
+                            <th>Request ID</th>
+                            <th>User</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Address</th>
+                            <th>Completed Date</th>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td colspan="6" class="empty">
+                                No completed pickups yet
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="update" id="update">
+
+        Status updated to in progress
+
+    </div>
+
+
+
+
+
+    <div class="modal hidden" id="modal">
+
+        <div class="modal-box">
+
+            <span class="close" id="closeBtn">
+                ×
+            </span>
+
+            <h3>Verify Pickup with OTP</h3>
+
+            <p class="gray">
+                Enter the OTP provided by the user to verify pickup
+            </p>
+
+
+
+
+            <label>Enter OTP</label>
+
+            <div class="otp-box">
+
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+
+            </div>
+
+            <p class="otp-text">
+                Expected OTP: 123456
+            </p>
+
+
+
+
+
+            <label class="top-space">
+                Item Condition Notes
+            </label>
+
+            <textarea placeholder="Add notes about item condition"></textarea>
+
+
+
+
+
+            <label class="top-space">
+                Upload Photos (Optional)
+            </label>
+
+            <div class="upload-box">
+
+                <img src="images/upload.png" class="upload-icon">
+
+                <p>
+                    Click to upload or drag and drop
+                </p>
+
+            </div>
+
+
+
+
+
+            <button class="verify-button">
+
+                Verify & Complete Pickup
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+
+        const pickupMenu = document.getElementById("pickupMenu");
+        const completedMenu = document.getElementById("completedMenu");
+
+        const pickupPage = document.getElementById("pickupPage");
+        const completedPage = document.getElementById("completedPage");
+
+
+
+        pickupMenu.onclick = () => {
+
+            pickupMenu.classList.add("active");
+            completedMenu.classList.remove("active");
+
+            pickupPage.classList.remove("hidden");
+            completedPage.classList.add("hidden");
+
+        };
+
+
+
+        completedMenu.onclick = () => {
+
+            completedMenu.classList.add("active");
+            pickupMenu.classList.remove("active");
+
+            completedPage.classList.remove("hidden");
+            pickupPage.classList.add("hidden");
+
+        };
+
+
+
+
+
+        const pickupBtn = document.getElementById("pickupBtn");
+
+        const update = document.getElementById("update");
+
+        const statusText = document.getElementById("statusText");
+
+        const pendingCount = document.getElementById("pendingCount");
+
+        const progressCount = document.getElementById("progressCount");
+
+        const modal = document.getElementById("modal");
+
+
+
+        pickupBtn.onclick = () => {
+
+            if (pickupBtn.innerText == "Start Pickup") {
+
+                pickupBtn.innerText = "Verify & Complete";
+
+                statusText.innerText = "in progress";
+
+                pendingCount.innerText = "0";
+
+                progressCount.innerText = "2";
+
+
+
+                update.classList.add("show");
+
+
+                setTimeout(() => {
+
+                    update.classList.remove("show");
+
+                }, 3000);
+
+            }
+
+            else {
+
+                modal.classList.remove("hidden");
+
+            }
+
+        };
+
+
+
+
+
+        document.getElementById("verifyBtn").onclick = () => {
+
+            modal.classList.remove("hidden");
+
+        };
+
+
+
+
+
+
+        document.getElementById("closeBtn").onclick = () => {
+
+            modal.classList.add("hidden");
+
+        };
+
+
+
+        window.onclick = (e) => {
+
+            if (e.target == modal) {
+
+                modal.classList.add("hidden");
+
+            }
+
+        };
+
+
+        const verifyCompleteBtn = document.querySelector(".verify-button");
+
+        verifyCompleteBtn.onclick = () => {
+
+            modal.classList.add("hidden");
+
+            update.innerText = "Pickup completed successfully";
+
+            update.classList.add("show");
+
+            setTimeout(() => {
+
+                update.classList.remove("show");
+
+            }, 3000);
+
+
+
+            progressCount.innerText =
+                Number(progressCount.innerText) - 1;
+
+
+
+            document.querySelectorAll(".card h1")[3].innerText =
+                Number(document.querySelectorAll(".card h1")[3].innerText) + 1;
+
+
+
+            statusText.innerText = "completed";
+
+
+
+            const table = document.querySelector("table");
+
+
+
+            const emptyRow = document.querySelector(".empty");
+
+            if (emptyRow) {
+
+                emptyRow.parentElement.remove();
+
+            }
+
+
+
+            const row = document.createElement("tr");
+
+
+
+            row.innerHTML = `
+
+            <td>PR1</td>
+            <td>John Doe</td>
+            <td>Laptop</td>
+            <td>2 Items</td>
+            <td>123 Main Street, Apt 4B</td>
+            <td>3/25/2025</td>
+
+        `;
+
+
+
+            table.appendChild(row);
+
+        };
+
+    </script>
+    <script src="collector.js"></script>
+
+</body>
+
+</html>

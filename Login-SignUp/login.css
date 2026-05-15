@@ -1,0 +1,223 @@
+/* For All  */
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', 'Roboto', 'Open Sans', 'Inter', 'Montserrat', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    background: #f5f5f5;
+}
+
+
+
+/* for link  */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+/* header  */
+
+#nav-logo {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+
+
+.nav-bar {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+
+    background: #fff;
+    z-index: 1000;
+}
+
+.web-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 20px;
+    gap: 10px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 0 50px 0 0;
+    align-items: center;
+}
+
+
+
+
+.button-section a:hover {
+    color: #0ba34a;
+}
+
+
+
+/* Main */
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 150px;
+}
+
+.login-signup-level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 35%;
+    font-size: 16px;
+
+    border-radius: 20px;
+    background-color: #ECECF0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+
+.login-l {
+    width: 49%;
+    height: 75%;
+    border-radius: 20px;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+
+.btn {
+    background-color: #ECECF0;
+
+    cursor: pointer;
+}
+
+.active {
+    background: white;
+}
+
+.login-l:hover {
+    cursor: pointer;
+}
+
+.form-box-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 31%;
+    background-color: #FFFFFF;
+    padding: 2%;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.level {
+    font-size: 16px;
+    font-weight: 570;
+    line-height: 0.1;
+    margin-top: 5px;
+}
+
+.level2 {
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+.input-level {
+    font-weight: 510;
+}
+
+input {
+    width: 90%;
+    border-radius: 9px;
+    background-color: #F3F3F5;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    outline: none;
+    padding: 10px 15px 10px 15px;
+    font-size: 16px;
+}
+
+.inpu1 {
+    width: 90%;
+    border-radius: 9px;
+    background-color: #F3F3F5;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    outline: none;
+    padding: 10px 15px 10px 15px;
+    font-size: 16px;
+}
+
+select {
+    background-color: #F3F3F5;
+    width: 98%;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    border: none;
+}
+
+.form-button {
+    font-weight: 510;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 90%;
+    padding: 10px 15px 10px 15px;
+    border-radius: 9px;
+}
+
+.form-button:hover {
+    cursor: pointer;
+}
