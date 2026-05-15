@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css
+    ">
 </head>
 
 <body>
@@ -80,37 +81,69 @@
         <div class="form-box">
             <div class="form-box-item">
                 <div class="level">
-                    Login to Your Account
+                    Create an Account
                 </div>
                 <div class="level2">
-                    Enter your credentials to access your dashboard
+                    Sign up to start recycling e-waste
                 </div>
+
+
+
                 <div class="input-level">
-                    I am a
+                    Full Name
                 </div>
-                <div class="inpu1">
-                    <select id="select-option">
-                        <option value="" selected disabled>Select your account type</option>
-                        <option value="user">User</option>
-                        <option value="collector">Collector</option>
-                        <option value="recycling">Recycling Center</option>
-                        <option value="admin">Admin</option>
-                    </select>
+                <div class="input">
+                    <input type="text" placeholder="John Doe" id="name">
                 </div>
+
+
+
                 <div class="input-level">
                     Email
                 </div>
                 <div class="input">
                     <input type="email" placeholder="your@gmail.com" id="email">
                 </div>
+
+
+
+                <div class="input-level">
+                    Phone
+                </div>
+                <div class="input">
+                    <input type="tel" pattern="[0-9]{11}" placeholder="01XXXXXXXXX" id="phone">
+                </div>
+
+
                 <div class="input-level">
                     Password
                 </div>
                 <div class="input">
                     <input type="password" placeholder="password" id="pass">
                 </div>
-                <div class="form-button" id="login-btn">
-                    Login
+
+
+                <div class="input-level">
+                    Account Type
+                </div>
+                <div class="inpu1">
+                    <select id="select-option">
+                        <option value="" selected disabled>Select your type</option>
+                        <option value="user">User</option>
+                        <option value="collector">Collector</option>
+                        <option value="recycling">Recycling Center</option>
+                    </select>
+                </div>
+
+
+
+                <div class="form-button" id="create-btn">
+                    Create Account
+                </div>
+
+
+                <div class="level3">
+                    Your account will be activated after admin approval
                 </div>
             </div>
         </div>
@@ -127,7 +160,7 @@
 
 
 
-    <script src="login.js"></script>
+    <script src="Signup.js"></script>
 </body>
 
 </html>
