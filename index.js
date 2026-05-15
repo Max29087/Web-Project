@@ -1,4 +1,4 @@
-let images = ["banner4.jpeg", "banner2.png", "banner3.png"];
+let images = ["Banner1.jpg", "Banner2.jpg", "Banner3.jpg"];
 let index = 0;
 
 let banner = document.getElementById("banner");

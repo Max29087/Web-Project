@@ -55,7 +55,7 @@ btn.onclick = function () {
         }
         else if (select.value == "admin") {
 
-            window.location.href = "#";
+            window.location.href = "../Admin/admin.html";
 
         }
     }
