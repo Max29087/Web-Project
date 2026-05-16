@@ -39,7 +39,7 @@ btn.onclick = function () {
 
         if (select.value == "user") {
 
-            window.location.href = "#";
+            window.location.href = "../User/user.html";
 
         }
 

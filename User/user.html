@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-regular fa-user"></i>
+            <h1>User Dashboard</h1>
+        </div>
+
+        <div class="nav-right">
+
+            <div class="points-box">
+                <i class="fa-solid fa-award"></i>
+                <span>150 Points</span>
+            </div>
+
+            <p class="welcome-text">
+                Welcome, John Doe
+            </p>
+
+            <button class="logout-btn" id="btn-logut">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <div class="main-container">
+
+
+
+        <aside class="sidebar">
+
+            <div class="menu-item active" id="requestBtn">
+                <i class="fa-solid fa-list"></i>
+                <span>My Pickup Requests</span>
+            </div>
+
+            <div class="menu-item" id="historyBtn">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>History</span>
+            </div>
+
+        </aside>
+
+
+
+        <main class="content">
+
+
+
+            <div class="status">
+
+                <div class="box">
+
+                    <div class="u-level">
+
+                        <div class="fflevel">
+                            Total Requests
+                        </div>
+
+                        <div class="fficon">
+                            <i class="fa-solid fa-kaaba"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="d-level">
+                        2
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="u-level">
+
+                        <div class="fflevel">
+                            Completed
+                        </div>
+
+                        <div class="fficon">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="d-level">
+                        0
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="u-level">
+
+                        <div class="fflevel">
+                            Pending
+                        </div>
+
+                        <div class="fficon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="d-level">
+                        1
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="u-level">
+
+                        <div class="fflevel">
+                            Reward Points
+                        </div>
+
+                        <div class="fficon">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="d-level">
+                        150
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="request-btn-box">
+
+                <button class="new-request-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    New Request
+                </button>
+
+            </div>
+
+
+
+            <section class="approval-card" id="requestSection">
+
+                <h1 class="title">
+                    My Pickup Requests
+                </h1>
+
+                <p class="subtitle">
+                    Track your e-waste collection requests
+                </p>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Request ID</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                            <th>Scheduled</th>
+                            <th>Collector</th>
+                            <th>Points</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>#pr1</td>
+                            <td>Laptop</td>
+                            <td>2</td>
+
+                            <td>
+                                <span class="user-status approved">
+                                    assigned
+                                </span>
+                            </td>
+
+                            <td>25/03/2025</td>
+
+                            <td>
+                                David Brown
+                            </td>
+
+                            <td>
+                                <span class="point-tag">
+                                    +50
+                                </span>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>#pr3</td>
+                            <td>Battery</td>
+                            <td>10</td>
+
+                            <td>
+                                <span class="user-status pending">
+                                    pending
+                                </span>
+                            </td>
+
+                            <td>-</td>
+
+                            <td>
+                                -
+                            </td>
+
+                            <td>
+                                <span class="point-tag">
+                                    +30
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+
+
+            <section class="approval-card hidden" id="historySection">
+
+                <h1 class="title">
+                    Pickup History
+                </h1>
+
+                <p class="subtitle">
+                    View your completed pickups and total recycling contributions
+                </p>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Request ID</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Completed Date</th>
+                            <th>Collector</th>
+                            <th>Points Earned</th>
+                        </tr>
+
+                    </thead>
+
+                </table>
+
+                <div class="empty-history">
+                    No completed pickups yet. Start recycling to build your history!
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <button class="chat-btn">
+        <i class="fa-regular fa-comment"></i>
+    </button>
+
+
+    <script src="user.js"></script>
+
+</body>
+
+</html>
