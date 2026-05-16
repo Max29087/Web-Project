@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Recycling Center Dashboard 2</title>
+    <link rel="stylesheet" href="sll.css">
+
+</head>
+
+
+<body>
+    <header class="nav-bar">
+        <div class="web-name">
+            <span class="material-icons-outlined">recycling</span>
+            Recycling Center Dashboard
+        </div>
+        <div class="button-section">
+            <span class="company-name">GreenTech Recycling</span>
+            <button class="logout-btn" id="btn-logut">
+                <span class="material-icons-outlined">logout</span> Logout
+            </button>
+        </div>
+    </header>
+
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <a href="r_center1.html" class="sidebar-item">
+                <span class="material-icons-outlined">move_to_inbox</span>
+                Incoming Pickups
+            </a>
+            <a href="r_center2.html" class="sidebar-item active">
+                <span class="material-icons-outlined">inventory_2</span>
+                Received Items
+            </a>
+        </aside>
+
+
+        <main class="main-content">
+            <div class="stats-cards">
+                <div class="card">
+                    <h3>Incoming Items</h3>
+                    <span class="material-icons-outlined icon">inventory_2</span>
+                    <div class="value">1</div>
+                </div>
+
+
+                <div class="card">
+                    <h3>Items Received</h3>
+                    <span class="material-icons-outlined icon">check_circle_outline</span>
+                    <div class="value">1</div>
+                </div>
+
+
+                <div class="card">
+                    <h3>Processed</h3>
+                    <span class="material-icons-outlined icon">recycling</span>
+                    <div class="value">1</div>
+                </div>
+
+
+                <div class="card">
+                    <h3>Certificates</h3>
+                    <span class="material-icons-outlined icon">workspace_premium</span>
+                    <div class="value">1</div>
+                </div>
+
+
+            </div>
+
+            <div class="content-box">
+                <div class="detail-top">
+                    <h2>Item #item1</h2>
+                    <span class="badge badge-completed">Certificate Generated</span>
+                </div>
+
+                <div class="detail-body">
+                    <p>Category: Mobile</p>
+                    <p>Quantity: 5</p>
+                    <p>Classification: Recyclable</p>
+                    <p>Received: 3/19/2025</p>
+
+                    <h4 class="detail-section-title">Recycling Outcome</h4>
+                    <p>Successfully recycled</p>
+
+                    <h4 class="detail-section-title">Recovered Materials</h4>
+                    <div class="materials-list">
+                        <span class="material-tag">Gold</span>
+                        <span class="material-tag">Copper</span>
+                        <span class="material-tag">Plastic</span>
+                    </div>
+
+                    <button class="btn-black">
+                        <span class="material-icons-outlined">download</span>
+                        Generate Certificate (PDF)
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="r_center.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recycling Center Dashboard</title>
+    <link rel="stylesheet" href="sll.css">
+</head>
+
+<body>
+
+    <header class="nav-bar">
+        <div class="web-name">
+            <span class="material-icons-outlined">recycling</span>
+            Recycling Center Dashboard
+        </div>
+        <div class="button-section">
+            <span class="company-name">GreenTech Recycling</span>
+            <button class="logout-btn" id="btn-logut">
+                <span class="material-icons-outlined">logout</span> Logout
+            </button>
+        </div>
+    </header>
+
+
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <a href="r_center1.html" class="sidebar-item active">
+                <span class="material-icons-outlined">move_to_inbox</span>
+                Incoming Pickups
+            </a>
+            <a href="r_center2.html" class="sidebar-item">
+                <span class="material-icons-outlined">inventory_2</span>
+                Received Items
+            </a>
+        </aside>
+
+        <main class="main-content">
+            <div class="stats-cards">
+                <div class="card">
+                    <h3>Incoming Items</h3>
+                    <span class="material-icons-outlined icon">inventory_2</span>
+                    <div class="value">1</div>
+                </div>
+
+
+                <div class="card">
+                    <h3>Items Received</h3>
+                    <span class="material-icons-outlined icon">check_circle_outline</span>
+                    <div class="value">1</div>
+                </div>
+
+                <div class="card">
+                    <h3>Processed</h3>
+                    <span class="material-icons-outlined icon">recycling</span>
+                    <div class="value">1</div>
+                </div>
+                <div class="card">
+                    <h3>Certificates</h3>
+                    <span class="material-icons-outlined icon">workspace_premium</span>
+                    <div class="value">1</div>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <div class="table-header">
+                    <h2>Incoming E-Waste Pickups</h2>
+                    <p>Items assigned to your recycling center</p>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Request ID</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Collector</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#pr1</td>
+                            <td>Laptop</td>
+                            <td>2</td>
+                            <td>David Brown</td>
+                            <td><span class="badge badge-assigned">assigned</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>#pr2</td>
+                            <td>Mobile</td>
+                            <td>5</td>
+                            <td>Emma Garcia</td>
+                            <td><span class="badge badge-completed">completed</span></td>
+                            <td>
+                                <button class="btn-black">
+                                    <span class="material-icons-outlined">check_circle</span>
+                                    Receive
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="r_center.js"></script>
+</body>
+
+</html>
