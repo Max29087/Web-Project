@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approvals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="approvals.css">
+</head>
+
+<body>
+
+
+
+
+    <main>
+        <div class="status">
+            <div class="box">
+                <div class="u-level">
+                    <div class="fflevel">Totol Users </div><i class="fa-regular fa-user fficon"
+                        id="feature-box-icon"></i>
+                </div>
+                <div class="d-level">156</div>
+            </div>
+
+
+            <div class="box">
+                <div class="u-level">
+                    <div class="fflevel">Total Pickups </div> <i class="fa-regular fa-truck" id="feature-box-icon"></i>
+
+                </div>
+                <div class="d-level">342</div>
+            </div>
+
+
+            <div class="box">
+                <div class="u-level">
+                    <div class="fflevel">Recycled (kg)</div> <i class="fa-solid fa-recycle" id="feature-box-icon"></i>
+
+                </div>
+                <div class="d-level">4567</div>
+            </div>
+
+
+            <div class="box">
+                <div class="u-level">
+                    <div class="fflevel">Reward Points</div> <i class="fa-solid fa-award" id="feature-box-icon"></i>
+
+                </div>
+                <div class="d-level">15420</div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="approval-card">
+
+            <h2 class="title">
+                Pending User Approvals
+            </h2>
+
+            <p class="subtitle">
+                Review and approve new user registrations
+            </p>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="userTable"></tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="approval-card">
+
+            <h2 class="title">
+                Recycling Centers
+            </h2>
+
+            <p class="subtitle">
+                Manage recycling center approvals
+            </p>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Capacity</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="centerTable"></tbody>
+
+            </table>
+
+        </div>
+
+
+
+        <div class="approval-card">
+
+            <h2 class="title">
+                Collectors
+            </h2>
+
+            <p class="subtitle">
+                Manage collector approvals
+            </p>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Vehicle</th>
+                        <th>Area</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="collectorTable"></tbody>
+
+            </table>
+
+        </div>
+
+
+
+    </main>
+
+
+    <script src="admin.js"></script>
+    <script src="approval.js"></script>
+</body>
+
+</html>

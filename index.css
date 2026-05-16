@@ -1,4 +1,4 @@
-/* For All  */
+
 * {
     border: 0px;
     padding: 0px;
@@ -15,7 +15,6 @@ body {
 
 
 
-/* for link  */
 a {
     text-decoration: none;
     color: black;
@@ -26,7 +25,6 @@ a {
 
 
 
-/* for icon  */
 .fa-solid {
     color: green;
     font-size: 25px;
@@ -42,7 +40,6 @@ a {
 
 
 
-/* header  */
 
 #nav-logo {
     width: 25px;
@@ -92,14 +89,13 @@ a {
 }
 
 
-/* Main  */
+
 
 .main-contain {
     display: flex;
     flex-direction: column;
 }
 
-/* banner start */
 .banner {
     display: flex;
     justify-content: center;
@@ -126,7 +122,6 @@ a {
     object-fit: cover;
 }
 
-/* banner end */
 
 
 
@@ -214,7 +209,6 @@ a {
 }
 
 
-/* work guide */
 
 .work-guide {
     margin-top: 80px;
@@ -264,7 +258,6 @@ a {
 }
 
 
-/* recommendatin */
 
 .recommendatin {
     height: 300px;
@@ -299,7 +292,6 @@ a {
 }
 
 
-/* footer */
 
 .footer {
     height: 120px;

@@ -1,4 +1,4 @@
-/* For All  */
+
 * {
     border: 0px;
     padding: 0px;
@@ -15,7 +15,7 @@ body {
 
 
 
-/* for link  */
+
 a {
     text-decoration: none;
     color: black;
@@ -29,7 +29,7 @@ a {
 
 
 
-/* header  */
+
 
 #nav-logo {
     width: 25px;
@@ -80,7 +80,6 @@ a {
 
 
 
-/* Main */
 
 .login-box {
     display: flex;

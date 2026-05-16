@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaigns</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="campaigns.css">
+</head>
+
+<body>
+
+
+
+
+    <main>
+
+
+        <div class="status">
+
+            <div class="box">
+
+                <div class="u-level">
+
+                    <div class="fflevel">
+                        Total Users
+                    </div>
+
+                    <i class="fa-regular fa-user fficon"></i>
+
+                </div>
+
+                <div class="d-level">
+                    156
+                </div>
+
+            </div>
+
+
+
+            <div class="box">
+
+                <div class="u-level">
+
+                    <div class="fflevel">
+                        Total Pickups
+                    </div>
+
+                    <i class="fa-solid fa-truck fficon"></i>
+
+                </div>
+
+                <div class="d-level">
+                    342
+                </div>
+
+            </div>
+
+
+
+            <div class="box">
+
+                <div class="u-level">
+
+                    <div class="fflevel">
+                        Recycled (kg)
+                    </div>
+
+                    <i class="fa-solid fa-recycle fficon"></i>
+
+                </div>
+
+                <div class="d-level">
+                    4567
+                </div>
+
+            </div>
+
+
+
+            <div class="box">
+
+                <div class="u-level">
+
+                    <div class="fflevel">
+                        Reward Points
+                    </div>
+
+                    <i class="fa-solid fa-award fficon"></i>
+
+                </div>
+
+                <div class="d-level">
+                    15420
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="campaign-container">
+
+            <div class="top-section">
+
+                <div>
+
+                    <h2 class="title">
+                        Campaigns & Awareness
+                    </h2>
+
+                    <p class="subtitle">
+                        Manage and broadcast campaigns to all users
+                    </p>
+
+                </div>
+
+
+                <button class="post-btn" onclick="openPopup()">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Post New Campaign
+
+                </button>
+
+            </div>
+
+
+
+
+            <div id="campaignList"></div>
+
+        </div>
+
+
+
+
+
+
+        <div class="popup" id="popup">
+
+            <div class="popup-box">
+
+                <div class="popup-top">
+
+                    <div>
+
+                        <h2 class="popup-title">
+                            Broadcast New Campaign
+                        </h2>
+
+                        <p class="popup-subtitle">
+                            Send a message to all users
+                        </p>
+
+                    </div>
+
+
+                    <button class="close-btn" onclick="closePopup()">
+
+                        ×
+
+                    </button>
+
+                </div>
+
+
+
+
+
+
+                <div class="input-box">
+
+                    <label>
+                        Campaign Type
+                    </label>
+
+                    <select id="campaignType">
+
+                        <option selected>
+                            Awareness
+                        </option>
+
+                        <option>
+                            Notice
+                        </option>
+
+                        <option>
+                            Event
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="input-box">
+
+                    <label>
+                        Title
+                    </label>
+
+                    <input type="text" id="campaignTitle" placeholder="Campaign title">
+
+                </div>
+
+
+
+
+
+
+
+                <div class="input-box">
+
+                    <label>
+                        Message
+                    </label>
+
+                    <textarea id="campaignMessage" placeholder="Campaign message"></textarea>
+
+                </div>
+
+
+
+
+
+
+                <button class="broadcast-btn" onclick="addCampaign()">
+
+                    <i class="fa-regular fa-paper-plane"></i>
+
+                    Broadcast Campaign
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="Campaigns.js"></script>
+    <script src="admin.js"></script>
+</body>
+
+</html>

@@ -12,7 +12,6 @@ body {
 
 
 
-/* for link  */
 a {
     text-decoration: none;
     color: black;
@@ -28,7 +27,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-right: 3%;
+    padding-right: 3.4%;
 }
 
 .report {
@@ -81,6 +80,7 @@ a {
     align-items: center;
     gap: 20px;
 }
+
 .chart {
     display: flex;
     align-items: flex-end;
@@ -145,15 +145,14 @@ a {
     flex-direction: column;
 }
 
-.llll {
-    height: 50%;
+.ww {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0ba34a;
 }
 
-.rrrr {
-    height: 50%;
-    padding-bottom: 5px;
-    background-color: #0ba34a;
-}
 
 .u-level {
     padding-top: 20px;
@@ -218,4 +217,157 @@ a {
 
 .purple {
     background: #845ef7;
+}
+
+
+.item3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-box {
+    width: 88%;
+    height: 488px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 35px;
+}
+
+.chart-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.chart-sub-title {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.recycle-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.recycle-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.recycle-label {
+    width: 220px;
+    font-size: 16px;
+    color: #555;
+}
+
+.recycle-bar-area {
+    width: 100%;
+    height: 57px;
+    border-left: 2px solid #999;
+}
+
+.recycle-bar {
+    height: 57px;
+    background: #16c784;
+}
+
+.bar1 {
+    width: 92%;
+}
+
+.bar2 {
+    width: 72%;
+}
+
+.bar3 {
+    width: 10%;
+}
+
+.chart-legend {
+    text-align: center;
+    font-size: 18px;
+    color: #16c784;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.top-box {
+    width: 96%;
+    background: #e7f4ea;
+    padding: 20px;
+    border-radius: 18px;
+    color: #0b7a37;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+.main-contain {
+    margin-left: 25%;
+    margin-right: 1%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.status {
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.box {
+    height: 56%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    gap: 30px;
+    background-color: #FFFFFF;
+}
+
+.u-level {
+    display: flex;
+    flex-direction: row;
+    padding: 10% 10% 0 10%;
+}
+
+.d-level {
+
+    padding: 0 10% 5% 10%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fficon {
+    width: 10%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.fflevel {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

@@ -2,41 +2,63 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
     <link rel="stylesheet" href="admin.css">
+
 </head>
 
 <body>
 
 
-    <!-- header  -->
+
+
     <header>
+
         <div class="nav-bar">
 
 
 
-            <!-- name  -->
+
             <div class="web-name">
+
                 <a href="#" class="web-name">
+
                     <img src="Admin.jpg" alt="Logo" id="nav-logo">
-                    <h3>Admin Dashboard</h3>
+
+                    <h3>
+                        Admin Dashboard
+                    </h3>
+
                 </a>
+
             </div>
 
 
 
-            <!-- Button  -->
+
+
+
             <div class="button-section">
+
                 <div>
+
                     <a href="" id="a-color">
+
                         Welcome, Admin
+
                     </a>
+
                 </div>
+
+
 
                 <button class="logout-btn" id="btn-logut">
 
@@ -45,86 +67,80 @@
                     Logout
 
                 </button>
+
             </div>
 
-
-
         </div>
+
     </header>
 
 
 
-    <!-- Main -->
+
+
+
+
     <main>
+
         <div class="main">
+
+
+
+
 
             <div class="side-bar">
 
 
-                <div class="element active" onclick="setActive(this)">
+
+
+
+                <div class="element active" onclick="statisticPage(this)" data-index="0">
+
                     <i class="fa-solid fa-chart-column" id="feature-box-icon"></i>
+
                     Statistics
+
                 </div>
 
-                <div class="element" onclick="setActive(this)">
+
+
+
+
+
+
+                <div class="element" onclick="approvalPage(this)" data-index="1">
+
                     <i class="fa-solid fa-user-check" id="feature-box-icon"></i>
+
                     Approvals
+
                 </div>
 
-                <div class="element" onclick="setActive(this)">
+
+
+
+
+                <div class="element" onclick="campaignsPage(this)" data-index="2">
+
                     <i class="fa-solid fa-bullhorn" id="feature-box-icon"></i>
+
                     Campaigns
+
                 </div>
+
             </div>
 
 
-            <div class="main-contain">
-                <div class="status">
-                    <div class="box">
-                        <div class="u-level">
-                            <div class="fflevel">Totol Users </div><i class="fa-regular fa-user fficon"
-                                id="feature-box-icon"></i>
-                        </div>
-                        <div class="d-level">156</div>
-                    </div>
 
 
-                    <div class="box">
-                        <div class="u-level">
-                            <div class="fflevel">Total Pickups </div> <i class="fa-regular fa-truck"
-                                id="feature-box-icon"></i>
-
-                        </div>
-                        <div class="d-level">342</div>
-                    </div>
 
 
-                    <div class="box">
-                        <div class="u-level">
-                            <div class="fflevel">Recycled (kg)</div> <i class="fa-solid fa-recycle"
-                                id="feature-box-icon"></i>
 
-                        </div>
-                        <div class="d-level">4567</div>
-                    </div>
+            <iframe id="frame" src="statistics.html">
 
-
-                    <div class="box">
-                        <div class="u-level">
-                            <div class="fflevel">Reward Points</div> <i class="fa-solid fa-award"
-                                id="feature-box-icon"></i>
-
-                        </div>
-                        <div class="d-level">15420</div>
-                    </div>
-
-
-                </div>
-                <iframe id="frame" src="statistics.html"></iframe>
-            </div>
+            </iframe>
 
         </div>
-
 
     </main>
 
@@ -133,9 +149,8 @@
 
 
 
-
-
     <script src="admin.js"></script>
+
 </body>
 
 </html>

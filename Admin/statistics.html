@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Statistics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,11 +15,53 @@
 <body>
 
     <main>
+        <div class="status">
+            <div class="box">
+                <div class="u-level">
+                    <div class="fflevel">Totol Users </div><i class="fa-regular fa-user fficon"
+                        id="feature-box-icon"></i>
+                </div>
+                <div class="d-level">156</div>
+            </div>
+
+
+            <div class="box">
+                <div class="u-level">
+                    <div class="fflevel">Total Pickups </div> <i class="fa-regular fa-truck" id="feature-box-icon"></i>
+
+                </div>
+                <div class="d-level">342</div>
+            </div>
+
+
+            <div class="box">
+                <div class="u-level">
+                    <div class="fflevel">Recycled (kg)</div> <i class="fa-solid fa-recycle" id="feature-box-icon"></i>
+
+                </div>
+                <div class="d-level">4567</div>
+            </div>
+
+
+            <div class="box">
+                <div class="u-level">
+                    <div class="fflevel">Reward Points</div> <i class="fa-solid fa-award" id="feature-box-icon"></i>
+
+                </div>
+                <div class="d-level">15420</div>
+            </div>
+
+
+        </div>
+
+
         <div class="item1">
             <div class="report">
                 <i class="fa-solid fa-download"></i>Generate Monthly Report (PDF)
             </div>
         </div>
+
+
         <div class="item2">
             <div class="graph1">
                 Monthly Collection Volume
@@ -56,14 +98,7 @@
                     </div>
 
                 </div>
-                <div class="u-level">
-                    <div class="under-level">
-                        <div class="u-l-b">
-                            <div class="llll"></div>
-                            <div class="rrrr"></div>
-                        </div>Weight (kg)
-                    </div>
-                </div>
+                <div class="ww"> Weight (kg)</div>
             </div>
             <div class="graph2-box">
 
@@ -103,10 +138,67 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="item3">
+            <div class="chart-box">
+
+                <h1 class="chart-title">Recycling Center Performance</h1>
+
+                <p class="chart-sub-title">
+                    Which recycling centers have processed the most e-waste
+                </p>
+
+                <div class="recycle-chart">
+
+                    <div class="recycle-row">
+                        <div class="recycle-label">
+                            GreenTech <br> Recycling
+                        </div>
+
+                        <div class="recycle-bar-area">
+                            <div class="recycle-bar bar1"></div>
+                        </div>
+                    </div>
+
+                    <div class="recycle-row">
+                        <div class="recycle-label">
+                            EcoWaste Solutions
+                        </div>
+
+                        <div class="recycle-bar-area">
+                            <div class="recycle-bar bar2"></div>
+                        </div>
+                    </div>
+
+                    <div class="recycle-row">
+                        <div class="recycle-label">
+                            TechCycle Inc
+                        </div>
+
+                        <div class="recycle-bar-area">
+                            <div class="recycle-bar bar3"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="chart-legend">
+                    ■ E-Waste Recycled (kg)
+                </div>
+
+                <div class="top-box">
+                    🏆 Top Performer: GreenTech Recycling - 2450kg recycled
+                </div>
+
+            </div>
+
+        </div>
+
     </main>
 
 
-    <script src="Statistics.js"></script>
+    <script src="admin.js"></script>
 </body>
 
 </html>
