@@ -44,3 +44,11 @@ slider.addEventListener("mouseenter", stopSlider);
 slider.addEventListener("mouseleave", startSlider);
 
 startSlider();
+
+
+
+
+let btn1 = document.getElementById("recommendatin-l3");
+btn1.onclick = function () {
+    window.location.href = "Login-SignUp/login.html";
+}
