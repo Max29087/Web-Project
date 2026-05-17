@@ -32,7 +32,7 @@ function slide() {
 }
 
 function startSlider() {
-    interval = setInterval(slide, 6000);
+    interval = setInterval(slide, 4000);
 }
 
 function stopSlider() {

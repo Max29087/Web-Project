@@ -50,7 +50,7 @@ btn.onclick = function () {
         }
         else if (select.value == "recycling") {
 
-            window.location.href = "../E-waste_Efty/r_center1.html";
+            window.location.href = "../Categories-rCenter/r_center1.html";
 
         }
         else if (select.value == "admin") {

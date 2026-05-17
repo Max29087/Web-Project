@@ -1,0 +1,252 @@
+
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', 'Roboto', 'Open Sans', 'Inter', 'Montserrat', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    background: #f4f4f4;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+#nav-logo {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+
+
+.nav-bar {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+
+    background: #fff;
+    z-index: 1000;
+}
+
+.web-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 20px;
+    gap: 10px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 0 50px 0 0;
+    align-items: center;
+}
+
+
+
+
+.button-section a:hover {
+    color: #0ba34a;
+}
+
+
+
+
+.form-top{
+    padding-left: 430px;
+    padding-top: 50px;
+}
+
+.contact-us{
+    font-size: 40px;
+    font-weight:bold;
+}
+
+.questions{
+    font-size: 20px;
+}
+
+.main{
+    display: flex;
+    padding: 30px ;
+    align-content: center;
+    gap: 20px;
+
+}
+
+.main-left{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 685px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 2%;
+    
+}
+
+.with-img{
+    display: flex;
+    align-items:center ;
+    gap: 20px;
+    padding: 15px;
+}
+
+.with-img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+
+.send-msg p span{
+    font-size: 18px;
+    font-weight: bold;
+    
+
+}
+.send-msg p{
+    font-size: 18px;
+    padding-bottom: 10px;
+    
+}
+.send-msg {
+    padding: 20px;
+
+}
+
+.form label{
+    font-size: 18px;
+    padding-left: 20px;
+    font-weight: bold;
+    
+}
+
+.form input{
+    font-size: 18px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 8px;
+    border: 1px;
+    height: 35px;
+    width: 430px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+.msg input{
+    height: 100px;
+}
+
+.form button{
+    font-size: 18px;
+    width: 450px;
+    margin-left: 18px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+
+.right-one h1{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+
+}
+
+.right-one h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+.right-one h3{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.right-one{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 2%;
+    padding: 15px 15px;
+    height: 280px;
+    margin-bottom: 15px;
+}
+
+.right-two{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 3%;
+    padding: 15px 15px;
+    height: 140px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+
+
+}
+
+.right-two span{
+    font-weight: normal;
+}
+
+.right-three{
+     border: 1px solid black;
+    background-color: rgb(232, 247, 214);
+    border-radius: 3%;
+    padding: 15px 15px;
+    height: 140px;
+    margin-bottom: 15px;
+
+}
+
+.right-three h1{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+
+}
+.right-three h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #0a913e;
+    padding-bottom: 10px;
+
+}
+.right-three h4{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
